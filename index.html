@@ -1,21 +1,285 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BONBOOM HERO! - Official Website</title>
-  <meta name="description" content="Play BONBOOM HERO! Bounce, merge, and evolve your heroes in a colorful arcade adventure.">
-  
-  <!-- Paste your Google AdSense verification meta tag here -->
+
+  <title>BONBOOM HERO! | Official Website</title>
+
+  <meta name="description" content="Play BONBOOM HERO! for free. Aim, bounce, multiply, and merge your heroes in an explosive arcade adventure.">
+  <meta name="theme-color" content="#1d1045">
+
+  <!-- Google AdSense Verification -->
+  <script async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6874745573730324"
+    crossorigin="anonymous"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #120b2e;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    .hero {
+      min-height: 90vh;
+      padding: 80px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background:
+        radial-gradient(circle at 50% 35%, #7542d6 0%, transparent 55%),
+        linear-gradient(160deg, #211052, #100a2d);
+    }
+
+    .logo {
+      font-size: clamp(42px, 9vw, 82px);
+      font-weight: 900;
+      letter-spacing: -2px;
+      line-height: 1.1;
+      color: #ffe45c;
+      text-shadow:
+        0 4px 0 #bd4a19,
+        0 8px 18px rgba(255, 153, 0, 0.4);
+    }
+
+    .subtitle {
+      margin: 22px 0 12px;
+      font-size: clamp(20px, 4vw, 30px);
+      font-weight: 700;
+    }
+
+    .description {
+      max-width: 650px;
+      margin: 0 auto;
+      font-size: 17px;
+      color: #ded5ff;
+    }
+
+    .play-button {
+      display: inline-block;
+      margin-top: 35px;
+      padding: 17px 48px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #ffe66b, #ff9e34);
+      color: #25103b;
+      text-decoration: none;
+      font-weight: 900;
+      font-size: 20px;
+      box-shadow: 0 7px 0 #b95720, 0 12px 35px rgba(255, 175, 35, .3);
+      transition: transform .15s, box-shadow .15s;
+    }
+
+    .play-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 0 #b95720, 0 17px 40px rgba(255, 175, 35, .4);
+    }
+
+    .section {
+      max-width: 1080px;
+      padding: 75px 24px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: clamp(26px, 5vw, 38px);
+      margin: 0 0 38px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .feature {
+      padding: 28px 22px;
+      background: #25164d;
+      border: 1px solid #533c8c;
+      border-radius: 20px;
+      text-align: center;
+    }
+
+    .feature .emoji {
+      font-size: 42px;
+    }
+
+    .feature h3 {
+      margin: 15px 0 8px;
+      font-size: 21px;
+      color: #ffe47a;
+    }
+
+    .feature p {
+      color: #d4c9ee;
+      margin: 0;
+      font-size: 15px;
+    }
+
+    .how-to-play {
+      max-width: 680px;
+      margin: auto;
+      padding: 28px;
+      background: #25164d;
+      border-radius: 18px;
+      color: #e2d9fa;
+    }
+
+    .how-to-play li {
+      padding: 7px 0;
+    }
+
+    .cta {
+      padding: 65px 20px 85px;
+      text-align: center;
+      background: linear-gradient(180deg, #1a1041, #312064);
+    }
+
+    .cta h2 {
+      margin-bottom: 12px;
+    }
+
+    .cta p {
+      color: #d9cbfb;
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px 15px;
+      font-size: 13px;
+      color: #b4a5cf;
+    }
+
+    @media (max-width: 700px) {
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: 80vh;
+        padding: 65px 20px;
+      }
+
+      .play-button {
+        width: 100%;
+        max-width: 320px;
+      }
+    }
+  </style>
 </head>
-<body style="font-family:Arial,sans-serif;background:#210c49;color:white;text-align:center;padding:60px 20px;">
-  <h1>BONBOOM HERO!</h1>
-  <h2>Bounce. Merge. Boom!</h2>
-  <p>Launch heroes, defeat enemies, unlock upgrades, and discover powerful evolutions!</p>
-  <a href="/bonboom-hero/"
-     style="display:inline-block;background:#ffcb3d;color:#210c49;padding:16px 36px;border-radius:14px;text-decoration:none;font-weight:bold;">
-    PLAY NOW
-  </a>
-  <p>Play free in your browser on desktop and mobile.</p>
+
+<body>
+
+  <main>
+
+    <section class="hero">
+      <div class="logo">BONBOOM<br>HERO!</div>
+
+      <div class="subtitle">
+        BOUNCE. MERGE. BOOM!
+      </div>
+
+      <p class="description">
+        Aim your cannon, launch powerful heroes, and create
+        explosive chain reactions! Merge matching heroes,
+        unlock exciting evolutions, and challenge endless
+        waves of enemies in this colorful arcade adventure.
+      </p>
+
+      <a class="play-button"
+         href="https://yunchieh0227.github.io/bonboom-hero/">
+        ▶ PLAY NOW
+      </a>
+
+      <p style="margin-top:24px;color:#d2c6ec;font-size:14px;">
+        Free to play • Desktop &amp; Mobile • No download required
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Game Features</h2>
+
+      <div class="features">
+
+        <div class="feature">
+          <div class="emoji">🎯</div>
+          <h3>Bounce &amp; Multiply</h3>
+          <p>
+            Aim carefully, shoot through multiplier gates,
+            and unleash massive bouncing attacks.
+          </p>
+        </div>
+
+        <div class="feature">
+          <div class="emoji">⚡</div>
+          <h3>Unique Hero Powers</h3>
+          <p>
+            Discover heroes with lightning, freezing,
+            explosions, piercing attacks, and other abilities.
+          </p>
+        </div>
+
+        <div class="feature">
+          <div class="emoji">🌟</div>
+          <h3>Merge &amp; Evolve</h3>
+          <p>
+            Combine three matching heroes to evolve them.
+            Discover stronger forms and powerful combinations.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>How to Play</h2>
+
+      <div class="how-to-play">
+        <ol>
+          <li>Drag to aim your cannon and release to fire.</li>
+          <li>Bounce your heroes into enemies to deal damage.</li>
+          <li>Use multiplier gates to increase your attacks.</li>
+          <li>Merge three matching heroes to evolve them.</li>
+          <li>Earn coins, unlock new heroes, and upgrade your team.</li>
+          <li>Survive challenging waves and powerful bosses.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Ready to Make Everything BOOM?</h2>
+
+      <p>
+        Build your ultimate hero team and discover
+        how far you can go!
+      </p>
+
+      <a class="play-button"
+         href="https://yunchieh0227.github.io/bonboom-hero/">
+        PLAY BONBOOM HERO!
+      </a>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>BONBOOM HERO! — An original browser arcade game.</p>
+    <p>© 2026 BONBOOM HERO! All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
